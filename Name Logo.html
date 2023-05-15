@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .god {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      color: #FFF;
+      background-color: #FF5722;
+      border-radius: 50%;
+      animation: rotate 5s linear infinite;
+    }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="god">
+      <div class="text">Gaurav</div>
+    </div>
+  </div>
+</body>
+</html>
